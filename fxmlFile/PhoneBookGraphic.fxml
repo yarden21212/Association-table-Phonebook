@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PhoneBookGraphicController">
+   <children>
+      <TextArea fx:id="textArea" prefHeight="328.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextArea>
+      <HBox alignment="CENTER" prefHeight="75.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addPressed" prefHeight="49.0" prefWidth="139.0" text="Add Contact" />
+            <Button mnemonicParsing="false" onAction="#removePressed" prefHeight="50.0" prefWidth="146.0" text="Remove Contact" />
+            <Button mnemonicParsing="false" onAction="#updatePressed" prefHeight="50.0" prefWidth="146.0" text="Update" />
+            <Button mnemonicParsing="false" onAction="#searchPressed" prefHeight="50.0" prefWidth="142.0" text="Search" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
